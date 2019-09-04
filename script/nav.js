@@ -99,11 +99,24 @@ function init() {
 
     // initialized form navs functions
     $('#content-main-body-form-close').on('click',close_main_form);
-    $('#content-main-aside-new').on('click',open_main_form);
-    $('#content-main-aside-team').find('li:not(".nav-header")').each(
+    $('#content-main-aside-new').on('click',
       function(){
-        $(this).on('click',close_main_form)
+        open_main_form();
+        if($('#content-main-aside').hasClass('show')){$('#content-main-aside').modal('toggle')}
       });
+    $('#content-main-aside-team').find('li:not(".nav-header")').on('click',
+      function(){
+        close_main_form();
+        if($('#content-main-aside').hasClass('show')){$('#content-main-aside').modal('toggle')}
+      });
+
+    // initialized navs functions
+    $('#aside').find('li:not(".nav-header")').on('click',function(){
+      if($('#aside').hasClass('show')){$('#aside').modal('toggle')}})
+
+
+
+
 }
 
 $( document ).ready(function() {
