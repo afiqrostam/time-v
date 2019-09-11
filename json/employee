@@ -1,0 +1,1340 @@
+[
+ {
+   "employee": "PKM-ALAW",
+   "employee_description": "Alan WARD",
+   "department": "PKM-OP3",
+   "company": "VEOLIA"
+ },
+ {
+   "employee": "PKM-ALEA",
+   "employee_description": "Alex ANGELKOSKI",
+   "department": "PKM-OP",
+   "company": "Veolia"
+ },
+ {
+   "employee": "PKM-ALL-ADAF",
+   "employee_description": "Adam FRENCH (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-ADAM",
+   "employee_description": "Adam MOXON (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-ADRM",
+   "employee_description": "Adrian MORRISON (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-AITM",
+   "employee_description": "Aita MEAFOU (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-ALEA",
+   "employee_description": "Aleksander ANGELKOVSKI (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-ALEL",
+   "employee_description": "Alevra LENNON (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-ALIT",
+   "employee_description": "Ali TURGUT (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-ALLB",
+   "employee_description": "Allan BRACAMONTE (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-ANDG",
+   "employee_description": "Andrew GRIFFITHS (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-ANDR",
+   "employee_description": "Andrew ROGERS (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-ANGV",
+   "employee_description": "Angelo VALLARIO (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-ANTC",
+   "employee_description": "Anthony CONTRERAS (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-ANTM",
+   "employee_description": "Anthony MCILQUHAM (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-ASHC",
+   "employee_description": "Ashley CLIMPSON (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-BAIF",
+   "employee_description": "Bailey FERIGO (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-BAYH",
+   "employee_description": "Baylee HARRIS (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-BLAH",
+   "employee_description": "Blake HENNEN (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-BRAL",
+   "employee_description": "Bradley LICKISS (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-BRAM",
+   "employee_description": "Brandon MUSHETT (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-BRAS",
+   "employee_description": "Bradley SKINNER (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-BRAW",
+   "employee_description": "Brad WRAY (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-BREM",
+   "employee_description": "Brett MCCLEAN (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-BRIM",
+   "employee_description": "Brian MCCORMACK (ALLMEN)",
+   "department": "PKM-TR2",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-BROG",
+   "employee_description": "Brooklyn GRAY (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-CALJ",
+   "employee_description": "Callum JOYCE (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-CALP",
+   "employee_description": "Caleb PRESSER (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-CALT",
+   "employee_description": "Callum TAYLOR (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-CAMC",
+   "employee_description": "Cameron COOPER (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-CHAB",
+   "employee_description": "Chai BICE (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-CHRB",
+   "employee_description": "Chris BUKALEVSKI (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-CHRL",
+   "employee_description": "Christopher LEE (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-CLER",
+   "employee_description": "Clement RENDA (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-COOG",
+   "employee_description": "Cooper GLASGOW (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-COOR",
+   "employee_description": "Cooper REMFRY (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-CRAB",
+   "employee_description": "Craig BONUS (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-DAMS",
+   "employee_description": "Damien SCHIMMEL (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-DANK",
+   "employee_description": "Daniel KELLY (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-DANM",
+   "employee_description": "Daniel MURRAY (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-DANT",
+   "employee_description": "Danny TEASDALE (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-DANW",
+   "employee_description": "Daniel WALKER (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-DARB",
+   "employee_description": "Darren BAILEY (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-DARH",
+   "employee_description": "Darrell HARRIS (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-DARL",
+   "employee_description": "Darren LUCK (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-DAVA",
+   "employee_description": "David T ANDERSON (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-DAVG",
+   "employee_description": "David GANDER (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-DAVV",
+   "employee_description": "David VETTORETTO (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-DEOR",
+   "employee_description": "Deo RUZUNGA (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-DOUH",
+   "employee_description": "Douglas HAY (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-ELOB",
+   "employee_description": "Eloise BENNETT (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-FIAF",
+   "employee_description": "Fiapopo FEAGAI (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-GERS",
+   "employee_description": "Gerald SELVES (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-GORS",
+   "employee_description": "Gordon SOMMERVILLE (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-GRAB",
+   "employee_description": "Graham BANKS (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-GRED",
+   "employee_description": "Greg DENNIS (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-GREW",
+   "employee_description": "Greg WILSON (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-GRWR",
+   "employee_description": "Greg WRAY (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-GUYT",
+   "employee_description": "Guy TURNBULL (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-JACC",
+   "employee_description": "Jacob CROMIE (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-JACL",
+   "employee_description": "Jackson LAMB (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-JACW",
+   "employee_description": "Jacob WOOLLEY (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-JAKS",
+   "employee_description": "Jakeb SMITH (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-JAMO",
+   "employee_description": "James OUDEJANS (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-JANS",
+   "employee_description": "Janine STROHFELDT (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-JARP",
+   "employee_description": "Jarred PARKES (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-JAYF",
+   "employee_description": "Jaye FERIGO (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-JAYS",
+   "employee_description": "Jayden SARGENT (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-JEDB",
+   "employee_description": "Jed BROOKER (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-JEFR",
+   "employee_description": "Jeffrey ROBERTS (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-JERH",
+   "employee_description": "Jeremy HEDGER-DUNN (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-JEST",
+   "employee_description": "Jesse THOMPSON (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-JOHK",
+   "employee_description": "John KUNZE (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-JOSB",
+   "employee_description": "Joshua BRADLEY (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-JOSD",
+   "employee_description": "Joshua DIMOVSKI (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-JUSB",
+   "employee_description": "Justin BOURKE (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-KADT",
+   "employee_description": "Kaden TOWLE (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-KATR",
+   "employee_description": "Katie ROTH (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-KATS",
+   "employee_description": "Katrina SCHUTZ (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-KAYM",
+   "employee_description": "Kayn MURRAY (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-KEES",
+   "employee_description": "Keegan STEWART (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-KEIV",
+   "employee_description": "Keith VAUGHAN (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-KYLH",
+   "employee_description": "Kyle HANSEN (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-LAUT",
+   "employee_description": "Laurence TOWNSEND (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-LIAB",
+   "employee_description": "Liam BROMWICH (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-MARB",
+   "employee_description": "Mark BELL (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-MARC",
+   "employee_description": "Mark COTTON (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-MATC",
+   "employee_description": "Matt CVETKOVSKI (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-MAXO",
+   "employee_description": "Max ONEIL (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-MICB",
+   "employee_description": "Michael BROWN (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-MICD",
+   "employee_description": "Michael DALEY (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-MICM",
+   "employee_description": "Michael MALIPHANT (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-MICP",
+   "employee_description": "Michael PETROVSKI (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-MICW",
+   "employee_description": "Michael WEST (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-MIDO",
+   "employee_description": "Michael DOS SANTOS (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-MIKF",
+   "employee_description": "Mikayla FLETCHER (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-MIME",
+   "employee_description": "Michael MEEHAN (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-MITR",
+   "employee_description": "Mitchell RYAN (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-NEIZ",
+   "employee_description": "Neil ZIZOVSKI (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-OMAH",
+   "employee_description": "Omar HOISEL (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-PAMA",
+   "employee_description": "Paul MAZZARA (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-PAUF",
+   "employee_description": "Paul FENWICK (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-PAUK",
+   "employee_description": "Paul KANE (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-PAUM",
+   "employee_description": "Paul MCTIERNAN (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-PAUS",
+   "employee_description": "Paul SWITZER (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-PHOS",
+   "employee_description": "Phoebe-Anne STRICKLAND (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-RICB",
+   "employee_description": "Rick BIMBILOSKI (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-RICD",
+   "employee_description": "Richard DEMAAGD (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-RICT",
+   "employee_description": "Richie TREE (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-RODL",
+   "employee_description": "Rod LUCK (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-RONS",
+   "employee_description": "Ronnie SILJANOSKI (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-RUSM",
+   "employee_description": "Russell MADDEN (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-SAMG",
+   "employee_description": "Samuel GUY (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-SARW",
+   "employee_description": "Sarah WOODS (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-SCOB",
+   "employee_description": "Scott BROWN (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-SCOF",
+   "employee_description": "Scott FORSYTH (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-SEAB",
+   "employee_description": "Sean BROWN (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-SHAC",
+   "employee_description": "Shane COOPER (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-SHCA",
+   "employee_description": "Shane CARNEY (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-SHCU",
+   "employee_description": "Shannon CURRY (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-SKYR",
+   "employee_description": "Skye RYAN (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-SMIS",
+   "employee_description": "Smith SMITH (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-STEG",
+   "employee_description": "Stevce GORGIJOVSKI (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-STEM",
+   "employee_description": "Steven MCGOWAN (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-STES",
+   "employee_description": "Steve STANKOVIC (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-STET",
+   "employee_description": "Stephen TURTON (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-THOH",
+   "employee_description": "Thomas HALLINGS (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-THOW",
+   "employee_description": "Thomas WILLIAMS (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-TONW",
+   "employee_description": "Tony WALES (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-TREO",
+   "employee_description": "Trent OWEN (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-TREQ",
+   "employee_description": "Trent QUIRK (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-TRIR",
+   "employee_description": "Tristan REID (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-TYH",
+   "employee_description": "Ty HORWOOD (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-TYSH",
+   "employee_description": "Tyson HARDING (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-VALF",
+   "employee_description": "Valter Sa FREITAS (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-VLAS",
+   "employee_description": "Vladamir SOKOLOVSKI (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-WAYP",
+   "employee_description": "Wayne PARTON (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-WILD",
+   "employee_description": "William DE LOS SANTOS (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-WILH",
+   "employee_description": "William HENDERSON (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-WOLK",
+   "employee_description": "Wolfgang KOMROWSKI (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-ZACB",
+   "employee_description": "Zac BROWN (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-ZACD",
+   "employee_description": "Zachary DUNN (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-ALL-ZACH",
+   "employee_description": "Zachary HOLLIS (ALLMEN)",
+   "department": "PKM-OP",
+   "company": "ALLMEN"
+ },
+ {
+   "employee": "PKM-BLAS",
+   "employee_description": "Billy (Watts) STOJCEVSKI",
+   "department": "PKM-OP",
+   "company": "VEOLIA"
+ },
+ {
+   "employee": "PKM-BREP",
+   "employee_description": "Brett POLL",
+   "department": "PKM-OP2",
+   "company": "VEOLIA"
+ },
+ {
+   "employee": "PKM-CHAB",
+   "employee_description": "Charles BUTLER",
+   "department": "PKM-OP",
+   "company": "VEOLIA"
+ },
+ {
+   "employee": "PKM-CHRN",
+   "employee_description": "Chris NIKOLOSKI",
+   "department": "PKM-OP3",
+   "company": "VEOLIA"
+ },
+ {
+   "employee": "PKM-COM-KRIJ",
+   "employee_description": "Kristian JONES (COMPACT MS)",
+   "department": "PKM-TR2",
+   "company": "COMPACT MS"
+ },
+ {
+   "employee": "PKM-CRAM",
+   "employee_description": "Craig MCINERNEY",
+   "department": "PKM-OP2",
+   "company": "VEOLIA"
+ },
+ {
+   "employee": "PKM-DAVG",
+   "employee_description": "Dave GRAY",
+   "department": "PKM-OP2",
+   "company": "VEOLIA"
+ },
+ {
+   "employee": "PKM-DAVL",
+   "employee_description": "David LATHAM",
+   "department": "PKM-OP",
+   "company": "VEOLIA"
+ },
+ {
+   "employee": "PKM-DOUM",
+   "employee_description": "Doug MURPHY",
+   "department": "PKM-OP",
+   "company": "VEOLIA"
+ },
+ {
+   "employee": "PKM-ELVJ",
+   "employee_description": "Elvis JOVANOSKI",
+   "department": "PKM-OP",
+   "company": "Veolia"
+ },
+ {
+   "employee": "PKM-EPEA",
+   "employee_description": "Epeli AHOLELEI",
+   "department": "PKM-OP2",
+   "company": "VEOLIA"
+ },
+ {
+   "employee": "PKM-EXT-FRAK",
+   "employee_description": "Frank KISS (EXT HYD)",
+   "department": "PKM-TR2",
+   "company": "EXT HYD"
+ },
+ {
+   "employee": "PKM-FRET",
+   "employee_description": "Fred TUBARO",
+   "department": "PKM-OP",
+   "company": "VEOLIA"
+ },
+ {
+   "employee": "PKM-GERC",
+   "employee_description": "Gerry CRISTIANO",
+   "department": "PKM-OP2",
+   "company": "VEOLIA"
+ },
+ {
+   "employee": "PKM-GLEF",
+   "employee_description": "Glen FAIRLEY",
+   "department": "PKM-OP2",
+   "company": "VEOLIA"
+ },
+ {
+   "employee": "PKM-GLEH",
+   "employee_description": "Glenn HORSPOOL",
+   "department": "PKM-TR2",
+   "company": "VEOLIA"
+ },
+ {
+   "employee": "PKM-JAKR",
+   "employee_description": "Jake RAINBIRD",
+   "department": "PKM-OP",
+   "company": "VEOLIA"
+ },
+ {
+   "employee": "PKM-JAMB",
+   "employee_description": "Jamie BATES",
+   "department": "PKM-OP3",
+   "company": "VEOLIA"
+ },
+ {
+   "employee": "PKM-JAMH",
+   "employee_description": "Jamie HARTY",
+   "department": "PKM-OP",
+   "company": "VEOLIA"
+ },
+ {
+   "employee": "PKM-JAMW",
+   "employee_description": "James WARD",
+   "department": "PKM-OP",
+   "company": "VEOLIA"
+ },
+ {
+   "employee": "PKM-JAYP",
+   "employee_description": "Jayden PEREIRA",
+   "department": "PKM-OP",
+   "company": "VEOLIA"
+ },
+ {
+   "employee": "PKM-JOHG",
+   "employee_description": "John GRAHAM",
+   "department": "PKM-OP2",
+   "company": "VEOLIA"
+ },
+ {
+   "employee": "PKM-JOHM",
+   "employee_description": "John MAGRIN",
+   "department": "PKM-OP2",
+   "company": "VEOLIA"
+ },
+ {
+   "employee": "PKM-JOSE",
+   "employee_description": "Joey ELLUL",
+   "department": "PKM-OP3",
+   "company": "VEOLIA"
+ },
+ {
+   "employee": "PKM-JOSK",
+   "employee_description": "Josh KANE",
+   "department": "PKM-OP",
+   "company": "VEOLIA"
+ },
+ {
+   "employee": "PKM-JULV",
+   "employee_description": "Julie Anne VAUGHAN",
+   "department": "PKM-OP",
+   "company": "VEOLIA"
+ },
+ {
+   "employee": "PKM-KELC",
+   "employee_description": "Kellie CREAGAN",
+   "department": "PKM-OP",
+   "company": "VEOLIA"
+ },
+ {
+   "employee": "PKM-KEVB",
+   "employee_description": "Kevin BEUMAN",
+   "department": "PKM-OP2",
+   "company": "VEOLIA"
+ },
+ {
+   "employee": "PKM-LARZ",
+   "employee_description": "Larch ZISIS",
+   "department": "PKM-OP",
+   "company": "VEOLIA"
+ },
+ {
+   "employee": "PKM-LUIT",
+   "employee_description": "Luigi TOBIA",
+   "department": "PKM-OP",
+   "company": "VEOLIA"
+ },
+ {
+   "employee": "PKM-MARS",
+   "employee_description": "Mark SOWDEN",
+   "department": "PKM-OP3",
+   "company": "VEOLIA"
+ },
+ {
+   "employee": "PKM-MATB",
+   "employee_description": "Matthew BALL",
+   "department": "PKM-OP",
+   "company": "VEOLIA"
+ },
+ {
+   "employee": "PKM-MICM",
+   "employee_description": "Michael MORGAN",
+   "department": "PKM-OP3",
+   "company": "VEOLIA"
+ },
+ {
+   "employee": "PKM-MICR",
+   "employee_description": "Michael REFALO",
+   "department": "PKM-SUP",
+   "company": "VEOLIA"
+ },
+ {
+   "employee": "PKM-MILP",
+   "employee_description": "Mile PRODANOVIC",
+   "department": "PKM-OP",
+   "company": "VEOLIA"
+ },
+ {
+   "employee": "PKM-MILS",
+   "employee_description": "Milco SAVEVSKI",
+   "department": "PKM-OP",
+   "company": "VEOLIA"
+ },
+ {
+   "employee": "PKM-NACM",
+   "employee_description": "Nace MARKOVSKI",
+   "department": "PKM-OP3",
+   "company": "VEOLIA"
+ },
+ {
+   "employee": "PKM-NEIP",
+   "employee_description": "Neil PHELPS",
+   "department": "PKM-SUP",
+   "company": "VEOLIA"
+ },
+ {
+   "employee": "PKM-NICD",
+   "employee_description": "Nickolaos DIAKAKIS",
+   "department": "PKM-OP2",
+   "company": "VEOLIA"
+ },
+ {
+   "employee": "PKM-PAUG",
+   "employee_description": "Paul GALLAGHER",
+   "department": "PKM-SUP",
+   "company": "VEOLIA"
+ },
+ {
+   "employee": "PKM-PAUH",
+   "employee_description": "Paul HEYMAN",
+   "department": "PKM-OP7",
+   "company": "VEOLIA"
+ },
+ {
+   "employee": "PKM-PAUM",
+   "employee_description": "Paul MCGLASHAN",
+   "department": "PKM-OP",
+   "company": "VEOLIA"
+ },
+ {
+   "employee": "PKM-PETG",
+   "employee_description": "Peter GRAY",
+   "department": "PKM-OP2",
+   "company": "VEOLIA"
+ },
+ {
+   "employee": "PKM-PETK",
+   "employee_description": "Peter KOTSOPOULOS",
+   "department": "PKM-OP2",
+   "company": "VEOLIA"
+ },
+ {
+   "employee": "PKM-PETL",
+   "employee_description": "Peter LEAUPEPE",
+   "department": "PKM-OP3",
+   "company": "VEOLIA"
+ },
+ {
+   "employee": "PKM-RICS",
+   "employee_description": "Richard SEATH",
+   "department": "PKM-OP2",
+   "company": "VEOLIA"
+ },
+ {
+   "employee": "PKM-RISM",
+   "employee_description": "Riste MITREVSKI",
+   "department": "PKM-OP2",
+   "company": "VEOLIA"
+ },
+ {
+   "employee": "PKM-SHAG",
+   "employee_description": "Shane GRASNICK",
+   "department": "PKM-OP2",
+   "company": "VEOLIA"
+ },
+ {
+   "employee": "PKM-SHAW",
+   "employee_description": "Shane WARD",
+   "department": "PKM-OP3",
+   "company": "VEOLIA"
+ },
+ {
+   "employee": "PKM-STEC",
+   "employee_description": "Steve COREA",
+   "department": "PKM-OP2",
+   "company": "VEOLIA"
+ },
+ {
+   "employee": "PKM-STEK",
+   "employee_description": "Steven KOTEVSKI",
+   "department": "PKM-OP",
+   "company": "VEOLIA"
+ },
+ {
+   "employee": "PKM-STEN",
+   "employee_description": "Steve NIKOLOSKI",
+   "department": "PKM-SUP",
+   "company": "VEOLIA"
+ },
+ {
+   "employee": "PKM-STEW",
+   "employee_description": "Steve WAPLES",
+   "department": "PKM-SUP",
+   "company": "VEOLIA"
+ },
+ {
+   "employee": "PKM-TEC-ARRA",
+   "employee_description": "Arran ATELY (TECSIDE)",
+   "department": "PKM-OP",
+   "company": "TECSIDE"
+ },
+ {
+   "employee": "PKM-TEC-DARS",
+   "employee_description": "Darren SOUTHALL (TECSIDE)",
+   "department": "PKM-OP",
+   "company": "TECSIDE"
+ },
+ {
+   "employee": "PKM-TEC-DEAC",
+   "employee_description": "Dean CANNON (TECSIDE)",
+   "department": "PKM-OP",
+   "company": "TECSIDE"
+ },
+ {
+   "employee": "PKM-TEC-KANW",
+   "employee_description": "Kane WILLIAMS (TECSIDE)",
+   "department": "PKM-OP",
+   "company": "TECSIDE"
+ },
+ {
+   "employee": "PKM-TEC-NICT",
+   "employee_description": "Nicholas THORNDYKE (TECSIDE)",
+   "department": "PKM-OP",
+   "company": "TECSIDE"
+ },
+ {
+   "employee": "PKM-TEC-RICD",
+   "employee_description": "Richard DEMAAGD (TECSIDE)",
+   "department": "PKM-OP",
+   "company": "TECSIDE"
+ },
+ {
+   "employee": "PKM-TIMJ",
+   "employee_description": "Tim JACKSON",
+   "department": "PKM-OP",
+   "company": "VEOLIA"
+ },
+ {
+   "employee": "PKM-TODD",
+   "employee_description": "Todor DIMITROVSKI",
+   "department": "PKM-OP2",
+   "company": "VEOLIA"
+ },
+ {
+   "employee": "PKM-TONB",
+   "employee_description": "Tony BOZINOVSKI",
+   "department": "PKM-TR2",
+   "company": "VEOLIA"
+ },
+ {
+   "employee": "PKM-TONC",
+   "employee_description": "Tony CVETKOVSKI",
+   "department": "PKM-OP",
+   "company": "VEOLIA"
+ },
+ {
+   "employee": "PKM-TONG",
+   "employee_description": "Tony GORGIEVSKI",
+   "department": "PKM-OP",
+   "company": "VEOLIA"
+ },
+ {
+   "employee": "PKM-TONM",
+   "employee_description": "Toni MILEVSKI",
+   "department": "PKM-OP2",
+   "company": "VEOLIA"
+ },
+ {
+   "employee": "PKM-TONN",
+   "employee_description": "Toni NAUMOVSKI",
+   "department": "PKM-OP3",
+   "company": "VEOLIA"
+ },
+ {
+   "employee": "PKM-TROA",
+   "employee_description": "Troy ADAMS",
+   "department": "PKM-OP2",
+   "company": "VEOLIA"
+ },
+ {
+   "employee": "PKM-TROM",
+   "employee_description": "Troy MICALLEF",
+   "department": "PKM-OP3",
+   "company": "VEOLIA"
+ },
+ {
+   "employee": "PKM-VANC",
+   "employee_description": "Vanessa CRAFT",
+   "department": "PKM-OP",
+   "company": "VEOLIA"
+ },
+ {
+   "employee": "PKM-VEO-BLA",
+   "employee_description": "Blast Furnace Team",
+   "department": "PKM-OP",
+   "company": "VEOLIA"
+ },
+ {
+   "employee": "PKM-VEO-COK",
+   "employee_description": "Coke Making Team",
+   "department": "PKM-OP",
+   "company": "VEOLIA"
+ },
+ {
+   "employee": "PKM-VEO-EXT",
+   "employee_description": "External Team",
+   "department": "PKM-OP",
+   "company": "VEOLIA"
+ },
+ {
+   "employee": "PKM-VEO-GEN",
+   "employee_description": "General Team",
+   "department": "PKM-OP",
+   "company": "VEOLIA"
+ },
+ {
+   "employee": "PKM-VEO-MIL",
+   "employee_description": "Mills Team",
+   "department": "PKM-OP",
+   "company": "VEOLIA"
+ },
+ {
+   "employee": "PKM-VEO-MTE",
+   "employee_description": "Maintenance Team",
+   "department": "PKM-OP",
+   "company": "VEOLIA"
+ },
+ {
+   "employee": "PKM-VEO-SER",
+   "employee_description": "Energy Services Team",
+   "department": "PKM-OP",
+   "company": "VEOLIA"
+ },
+ {
+   "employee": "PKM-VEO-SLA",
+   "employee_description": "Slab Making Team",
+   "department": "PKM-OP",
+   "company": "VEOLIA"
+ },
+ {
+   "employee": "PKM-VOJP",
+   "employee_description": "Voiden POPOVSKI",
+   "department": "PKM-OP2",
+   "company": "VEOLIA"
+ },
+ {
+   "employee": "PKM-WAYS",
+   "employee_description": "Wayne STEELE",
+   "department": "PKM-OP2",
+   "company": "VEOLIA"
+ },
+ {
+   "employee": "PKM-ZORL",
+   "employee_description": "Zoran LUKAROVSKI",
+   "department": "PKM-OP2",
+   "company": "VEOLIA"
+ }
+]
