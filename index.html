@@ -11,20 +11,22 @@
     <!-- for Chrome on Android, multi-resolution icon of 196x196 -->
     <meta name="mobile-web-app-capable" content="yes">
     <!-- style -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://use.fontawesome.com/2943e7c928.css">
     <!-- build:css ../assets/css/app.min.css -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
     <link rel="stylesheet" href="https://afiqrostam.github.io/time-v/css/app.css" type="text/css" />
     <link rel="stylesheet" href="https://afiqrostam.github.io/time-v/css/primary.css" type="text/css" />
     <link rel="stylesheet" href="https://afiqrostam.github.io/time-v/css/style.css" type="text/css" />
 </head>
 
 <body>
-    <div class="app" id="app">
+    <div class="app hide" id="app">
         <!-- ############ LAYOUT START-->
         <!-- ############ Aside START-->
-        <div id="aside" class="app-aside fade box-shadow-x nav-expand white" aria-hidden="true">
+        <div id="aside" class="app-aside fade box-shadow-x nav-expand white">
             <div class="sidenav modal-dialog dk white">
                 <!-- sidenav top -->
                 <div class="navbar lt">
@@ -47,13 +49,19 @@
                                     &nbsp;
                                 </li>
                                 <li class="active">
-                                    <a href="#" data-toggle="tab" data-target="#content-main" class="show">
+                                    <a href="#" data-toggle="tab" data-target="#content-work-order" class="show">
                                         <span class="nav-icon"><i class="fa fa-home"></i></span>
-                                        <span class="nav-text">Main</span>
+                                        <span class="nav-text">Job Packs</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" data-toggle="tab" data-target="#content-setting">
+                                    <a href="#" data-toggle="tab" data-target="#content-daily-schedule">
+                                        <span class="nav-icon"><i class="fa fa-table"></i></span>
+                                        <span class="nav-text">Daily Schedule</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" data-toggle="tab" data-target="#content-settings">
                                         <span class="nav-icon"><i class="fa fa-tasks"></i></span>
                                         <span class="nav-text">Settings</span>
                                     </a>
@@ -67,405 +75,524 @@
         </div>
         <!-- ############ Aside END-->
         <!-- ############ Content START-->
-        <div id="content" class="app-content box-shadow-0" role="main">
+        <div class="app-content box-shadow-0">
             <!-- Header -->
-            <div class="content-header white  box-shadow d-lg-none" id="content-header">
+            <div class="content-header white  box-shadow d-lg-none">
                 <div class="navbar navbar-expand-lg">
                     <!-- btn to toggle sidenav on small screen -->
                     <a class="d-lg-none mx-2" data-toggle="modal" data-target="#aside">
                         <i class="fa fa-lg fa-bars"></i>
                     </a>
                     <!-- Page title -->
-                    <div class="navbar-text nav-title flex" id="content-header-title">&nbsp;</div>
+                    <div class="navbar-text nav-title flex"></div>
                 </div>
             </div>
             <div class="tab-content">
                 <!-- Content -->
-                <!-- Main START-->
-                <div class="content-main tab-pane active" id="content-main">
+                <!-- Work Order START-->
+                <div class="content-work-order tab-pane active" id="content-work-order" data-id="work">
                     <div class="d-flex flex">
-                        <div class="d-flex flex fixed-height">
-                            <div class="fade aside aside-sm b-r" id="content-main-aside">
-                                <div class="modal-dialog d-flex flex-column w-md h-100 light lt">
-                                    <div class="navbar">
-                                        <span class="text-md">Main</span>
+                        <div class="fade aside aside-sm b-r" id="content-work-order-aside">
+                            <div class="modal-dialog d-flex flex-column w-md h-100 light lt">
+                                <div class="navbar">
+                                    <span class="text-md">Job Packs</span>
+                                </div>
+                                <div class="scrollable hover">
+                                    <a class="nav-link mt-2 content-nav">
+                                        <span class="btn btn-sm btn-block btn-rounded theme">
+                                            <i class="fa fa-plus float-left"></i>
+                                            New
+                                        </span>
+                                    </a>
+                                    <div class="sidenav my-3">
+                                        <nav class="nav-border b-theme" data-nav="">
+                                            <ul class="nav">
+                                                <li class="nav-header">
+                                                    <div class="b-t mt-3 pt-3 pb-2 text-muted">Team</div>
+                                                </li>
+                                                <li class="content-nav active">
+                                                    <a href="#" class="link">
+                                                        <span class="nav-text name">All</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </nav>
                                     </div>
-                                    <div class="scrollable hover">
-                                        <a class="nav-link mt-2" id="content-main-aside-new">
-                                            <span class="btn btn-sm btn-block btn-rounded theme">
-                                                <i class="fa fa-plus float-left"></i>
-                                                New
+                                </div>
+                                <!-- / -->
+                                <!-- footer -->
+                                <div class="p-2 mt-auto p-3">
+                                    Footer
+                                </div>
+                                <!-- / -->
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column flex white">
+                            <div class="body-search">
+                                <div class="navbar flex-nowrap box-shadow">
+                                    <a data-toggle="modal" data-target="#content-work-order-aside" data-modal=""
+                                        class="mr-1 d-md-none">
+                                        <span class="btn btn-sm btn-icon primary">
+                                            <i class="fa fa-th"></i>
+                                        </span>
+                                    </a>
+                                    <form class="w-100">
+                                        <div class="input-group">
+                                            <input type="text"
+                                                class="form-control form-control-sm search body-search-input"
+                                                placeholder="Input the keywords to search" required="">
+                                            <span class="input-group-append">
+                                                <button class="btn btn-default btn-sm no-shadow" type="button"><i
+                                                        class="fa fa-search"></i></button>
                                             </span>
-                                        </a>
-                                        <div class="sidenav my-3">
-                                            <nav class="nav-border b-theme" data-nav="">
-                                                <ul class="nav" id="content-main-aside-team">
-                                                    <li class="nav-header">
-                                                        <div class="b-t mt-3 pt-3 pb-2 text-muted">Team</div>
-                                                    </li>
-                                                    <li class="active">
-                                                        <a href="#" class="link">
-                                                            <span class="nav-text name">All</span>
-                                                        </a>
-                                                    </li>
-                                                    <li class="">
-                                                        <a href="#" class="link">
-                                                            <span class="nav-text name">Coke Making</span>
-                                                        </a>
-                                                    </li>
-                                                    <li class="">
-                                                        <a href="#" class="link">
-                                                            <span class="nav-text name">Services</span>
-                                                        </a>
-                                                    </li>
-                                                    <li class="">
-                                                        <a href="#" class="link">
-                                                            <span class="nav-text name">Blast Furnace</span>
-                                                        </a>
-                                                    </li>
-                                                    <li class="">
-                                                        <a href="#" class="link">
-                                                            <span class="nav-text name">Slab Making</span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </nav>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="scroll-y">
+                                    <div class="list body-result hide">
+                                    </div>
+                                    <div class="no-result hide">
+                                        <div class="p-4 text-center">
+                                            No Results
                                         </div>
                                     </div>
-                                    <!-- / -->
-                                    <!-- footer -->
-                                    <div class="p-2 mt-auto p-3">
-                                        Footer
+                                    <div class="body-start">
+                                        <div class="p-4 text-center">
+                                            Input the search field on top or click on the selections on the side to
+                                            begin.
+                                        </div>
                                     </div>
-                                    <!-- / -->
+                                </div>
+                                <div class="p-3 b-t mt-auto">
+                                    <div class="d-flex align-items-center">
+                                        <div>
+                                            <span class="text-muted">Total:</span>
+                                            <span class="body-count">0</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="d-flex flex" id="content-main-body">
-                                <div class="d-flex flex-column flex white">
-                                    <div class="active" id="content-main-body-search">
-                                        <div class="navbar flex-nowrap box-shadow">
-                                            <a data-toggle="modal" data-target="#content-main-aside" data-modal=""
-                                                class="mr-1 d-md-none">
-                                                <span class="btn btn-sm btn-icon primary">
-                                                    <i class="fa fa-th"></i>
-                                                </span>
-                                            </a>
-                                            <form class="w-100">
-                                                <div class="input-group">
-                                                    <input id="content-main-body-search-input" type="text"
-                                                        class="form-control form-control-sm search"
-                                                        placeholder="Input the keywords to search" required="">
-                                                    <span class="input-group-append">
-                                                        <button class="btn btn-default btn-sm no-shadow"
-                                                            type="button"><i class="fa fa-search"></i></button>
-                                                    </span>
-                                                </div>
-                                            </form>
-                                            <button id="content-main-body-search-sort"
-                                                class="btn btn-sm white ml-1 sort desc" data-sort="item-title"
-                                                data-toggle="tooltip" title="" data-original-title="Sort">
-                                                <i class="fa fa-sort"></i>
-                                            </button>
-                                        </div>
-                                        <div class="scroll-y">
-                                            <div class="p-3">
-                                                Scrollable content, Resize the Window to see how it works on small
-                                                screen
-                                                <div style="min-height: 75vh;"></div>
-                                                Got the bottom
+                            <div class="hide body-form">
+                                <div class="navbar box-shadow">
+                                    <a href="#" data-toggle="tooltip" data-placement="right" title=""
+                                        data-original-title="Back"
+                                        class="d-md-none btn-go-back btn btn-sm btn-icon primary body-form-close">
+                                        <i class="fa fa-long-arrow-left"></i>
+                                    </a>
+                                </div>
+                                <div class="scroll-y">
+                                    <div class="p-3 px-md-5 py-md-4">
+                                        <div class="form-group row">
+                                            <label class="col-md-2 col-form-label">Work Description</label>
+                                            <div class="col-md-10">
+                                                <p class="form-control-plaintext data-wo-desc">&nbsp;</p>
                                             </div>
                                         </div>
-                                        <div class="p-3 b-t mt-auto">
-                                            Content footer
-                                        </div>
-                                    </div>
 
-
-                                    <div class="hide" id="content-main-body-form">
-                                        <div class="navbar box-shadow">
-                                            <ul class="nav nav-sm no-border">
-
-                                                <li class="nav-item b-l p-l">
-                                                    <a class="nav-link text-muted no-border" data-toggle="tooltip"
-                                                        data-placement="bottom" title="" data-original-title="Archive">
-                                                        <span class="nav-text"><i class="fa fa-fw fa-hdd-o"></i></span>
-                                                    </a>
-                                                </li>
-                                                <li class="nav-item hidden-sm-down">
-                                                    <a class="nav-link text-muted" data-toggle="tooltip"
-                                                        data-placement="bottom" title="" data-original-title="Report">
-                                                        <span class="nav-text"><i
-                                                                class="fa fa-fw fa-question"></i></span>
-                                                    </a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a class="nav-link text-muted" data-toggle="tooltip"
-                                                        data-placement="bottom" title="" data-original-title="Delete">
-                                                        <span class="nav-text"><i
-                                                                class="fa fa-fw fa-trash-o"></i></span>
-                                                    </a>
-                                                </li>
-
-                                            </ul>
-                                            <a href="#" class="d-md-none btn-go-back btn btn-sm btn-icon primary"
-                                                id="content-main-body-form-close">
-                                                <i class="fa fa-long-arrow-left"></i>
-                                            </a>
-                                        </div>
-                                        <div class="scroll-y">
-                                            <div class="p-3 px-md-5 py-md-4">
-                                                <h2 class="mb-3 _600">Bootstrap 4 CSS Framework</h2>
-                                                <div class="py-3 b-t">
-                                                    <img class="circle w-32 mr-2"
-                                                        src="https://getbootstrap.com/docs/4.0/assets/img/favicons/favicon-32x32.png"
-                                                        alt=".">
-                                                    from
-                                                    <a href="#">james@gmail.com</a>
-                                                    <span class="text-xs text-muted">on 12:20 7/23</span>
-                                                </div>
-                                                <div>
-                                                    <p>Hey David,</p>
-                                                    <p class="text-lt">Lorem ipsum dolor sit amet, consectetur
-                                                        adipiscing elit. Morbi id neque quam. Aliquam sollicitudin
-                                                        venenatis ipsum ac feugiat. Vestibulum ullamcorper sodales nisi
-                                                        nec condimentum. Mauris convallis mauris at
-                                                        pellentesque volutpat.</p>
-                                                    <blockquote>
-                                                        <em>Phasellus at ultricies neque, quis malesuada augue. Donec
-                                                            eleifend condimentum nisl eu consectetur. Integer eleifend,
-                                                            nisl venenatis consequat iaculis, lectus arcu malesuada sem,
-                                                            dapibus porta quam lacus
-                                                            eu neque.</em>
-                                                    </blockquote>
-                                                    <p>Morbi id neque quam. Aliquam sollicitudin venenatis ipsum ac
-                                                        feugiat. Vestibulum ullamcorper sodales nisi nec condimentum.
-                                                        Mauris convallis mauris at pellentesque volutpat. Phasellus at
-                                                        ultricies neque, quis
-                                                        malesuada augue. Donec eleifend condimentum nisl eu consectetur.
-                                                        Integer eleifend, nisl venenatis consequat iaculis, lectus arcu
-                                                        malesuada sem, dapibus porta quam lacus eu neque.</p>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis non
-                                                        malesuada est, quis congue nibh. Pellentesque habitant morbi
-                                                        tristique senectus et netus et malesuada fames ac turpis
-                                                        egestas.</p>
-                                                    <p>Consectetur adipiscing elit. Morbi id neque quam. Aliquam
-                                                        sollicitudin venenatis ipsum ac feugiat. Vestibulum ullamcorper
-                                                        sodales nisi nec condimentum. Mauris convallis mauris at
-                                                        pellentesque volutpat. Phasellus
-                                                        at ultricies neque, quis malesuada augue. Donec eleifend</p>
-                                                    <p>&nbsp;</p>
-                                                    <p>Best Regards</p>
-                                                </div>
+                                        <div class="form-group row">
+                                            <label class="col-md-2 col-form-label">Task No.</label>
+                                            <div class="col-md-10">
+                                                <p class="form-control-plaintext">
+                                                    <span class="data-task-no">&nbsp;</span>
+                                                    <span class="mx-1 text-muted data-task-desc">&nbsp;</span>
+                                                </p>
                                             </div>
-                                            <div class="p-3 px-md-5 py-md-4 b-t">
-                                                <h6 class="mb-2">Attached files:</h6>
-                                                <div>
-                                                    <a href="#" class="d-block mb-1">
-                                                        <span class="badge info">PSD</span> DesignMockup.psd
-                                                        <small class="ml-2 text-muted">34kb</small>
-                                                    </a>
-                                                    <a href="#" class="d-block mb-1">
-                                                        <span class="badge success">PDF</span> Design-Documentation.pdf
-                                                        <small class="ml-2 text-muted">432kb</small>
-                                                    </a>
-                                                    <a href="#" class="d-block mb-1">
-                                                        <span class="badge blue">MP4</span> Design-video-show.mp4
-                                                        <small class="ml-2 text-muted">3mb</small>
-                                                    </a>
-                                                </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="col-md-4">
+                                                <small class="form-text text-muted">Veolia Service Order</small>
+                                                <p class="form-control-plaintext data-veolia-so">&nbsp;</p>
+                                            </div>
+                                            <div class="col-md-4">
+
+                                                <small class="form-text text-muted">BlueScope Purchase
+                                                    Order</small>
+                                                <p class="form-control-plaintext data-bsc-po">&nbsp;</p>
+                                            </div>
+                                            <div class="col-md-4">
+
+                                                <small class="form-text text-muted">BlueScope Work Order</small>
+                                                <p class="form-control-plaintext data-bsc-wo">&nbsp;</p>
                                             </div>
                                         </div>
                                     </div>
+
                                 </div>
                             </div>
                         </div>
                     </div>
-
                 </div>
-                <!-- Main END-->
-                <!-- Setting START-->
-                <div class="content-setting tab-pane" id="content-setting">
-                    <div>
-                        <div class="d-sm-flex">
-                            <div class="w w-auto-xs light bg bg-auto-sm b-r">
-                                <div class="py-3">
-                                    <div class="nav-active-border left b-primary">
-                                        <ul class="nav flex-column nav-sm">
-                                            <li class="nav-item">
-                                                <a class="nav-link active" href="#" data-toggle="tab"
-                                                    data-target="#tab-1">Profile</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link " href="#" data-toggle="tab"
-                                                    data-target="#tab-2">Account Settings</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link " href="#" data-toggle="tab"
-                                                    data-target="#tab-3">Emails</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link " href="#" data-toggle="tab"
-                                                    data-target="#tab-4">Notifications</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link " href="#" data-toggle="tab"
-                                                    data-target="#tab-5">Security</a>
-                                            </li>
-                                        </ul>
+                <!-- Work Order END-->
+                <!-- Daily Schedule START-->
+                <div class="content-daily-schedule tab-pane" id="content-daily-schedule">
+                    <div class="d-flex flex">
+                        <div class="fade aside aside-sm b-r" id="content-daily-schedule-aside">
+                            <div class="modal-dialog d-flex flex-column w-md h-100 light lt">
+                                <div class="navbar">
+                                    <span class="text-md">Daily Schedule</span>
+                                </div>
+                                <div class="scrollable hover">
+                                    <a class="nav-link mt-2 content-nav">
+                                        <span class="btn btn-sm btn-block btn-rounded theme">
+                                            <i class="fa fa-plus float-left"></i>
+                                            New
+                                        </span>
+                                    </a>
+                                    <div class="sidenav my-3">
+                                        <nav class="nav-border b-theme" data-nav="">
+                                            <ul class="nav">
+                                                <li class="nav-header">
+                                                    <div class="b-t mt-3 pt-3 pb-2 text-muted">Company</div>
+                                                </li>
+                                                <li class="content-nav active">
+                                                    <a href="#" class="link">
+                                                        <span class="nav-text name">All</span>
+                                                    </a>
+                                                </li>
+                                                <li class="content-nav">
+                                                    <a href="#" class="link">
+                                                        <span class="nav-text name">Veolia</span>
+                                                    </a>
+                                                </li>
+                                                <li class="content-nav">
+                                                    <a href="#" class="link">
+                                                        <span class="nav-text name">Allmen</span>
+                                                    </a>
+                                                </li>
+                                                <li class="content-nav">
+                                                    <a href="#" class="link">
+                                                        <span class="nav-text name">Others</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                                <!-- / -->
+                                <!-- footer -->
+                                <div class="p-2 mt-auto p-3">
+                                    Footer
+                                </div>
+                                <!-- / -->
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column flex white">
+                            <div class="active body-search">
+                                <div class="navbar flex-nowrap box-shadow">
+                                    <a data-toggle="modal" data-target="#content-daily-schedule-aside" data-modal=""
+                                        class="mr-1 d-md-none">
+                                        <span class="btn btn-sm btn-icon primary">
+                                            <i class="fa fa-th"></i>
+                                        </span>
+                                    </a>
+                                    <form class="w-100">
+                                        <div class="input-group">
+                                            <input type="text"
+                                                class="form-control form-control-sm search body-search-input"
+                                                placeholder="Input the keywords to search" required="">
+                                            <span class="input-group-append">
+                                                <button class="btn btn-default btn-sm no-shadow" type="button"><i
+                                                        class="fa fa-search"></i></button>
+                                            </span>
+                                        </div>
+                                    </form>
+                                    <button class="btn btn-sm white ml-1 sort desc body-search-sort"
+                                        data-sort="item-title" data-toggle="tooltip" title=""
+                                        data-original-title="Sort">
+                                        <i class="fa fa-sort"></i>
+                                    </button>
+                                </div>
+                                <div class="scroll-y">
+                                    <div class="p-3">
+                                        Scrollable content, Resize the Window to see how it works on small
+                                        screen
+                                        <div style="min-height: 75vh;"></div>
+                                        Got the bottom
+                                    </div>
+                                </div>
+                                <div class="p-3 b-t mt-auto">
+                                    Content footer
+                                </div>
+                            </div>
+                            <div class="hide body-form">
+                                <div class="navbar box-shadow">
+                                    <ul class="nav nav-sm no-border">
+
+                                        <li class="nav-item b-l p-l">
+                                            <a class="nav-link text-muted no-border" data-toggle="tooltip"
+                                                data-placement="bottom" title="" data-original-title="Archive">
+                                                <span class="nav-text"><i class="fa fa-fw fa-hdd-o"></i></span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item hidden-sm-down">
+                                            <a class="nav-link text-muted" data-toggle="tooltip" data-placement="bottom"
+                                                title="" data-original-title="Report">
+                                                <span class="nav-text"><i class="fa fa-fw fa-question"></i></span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-muted" data-toggle="tooltip" data-placement="bottom"
+                                                title="" data-original-title="Delete">
+                                                <span class="nav-text"><i class="fa fa-fw fa-trash-o"></i></span>
+                                            </a>
+                                        </li>
+
+                                    </ul>
+                                    <a href="#"
+                                        class="d-md-none btn-go-back btn btn-sm btn-icon primary body-form-close">
+                                        <i class="fa fa-long-arrow-left"></i>
+                                    </a>
+                                </div>
+                                <div class="scroll-y">
+                                    <div class="p-3 px-md-5 py-md-4">
+                                        <h2 class="mb-3 _600">Daily Schedule Form</h2>
+                                        <div class="py-3 b-t">
+                                            <img class="circle w-32 mr-2"
+                                                src="https://getbootstrap.com/docs/4.0/assets/img/favicons/favicon-32x32.png"
+                                                alt=".">
+                                            from
+                                            <a href="#">james@gmail.com</a>
+                                            <span class="text-xs text-muted">on 12:20 7/23</span>
+                                        </div>
+                                        <div>
+                                            <p>Hey David,</p>
+                                            <p class="text-lt">Lorem ipsum dolor sit amet, consectetur
+                                                adipiscing elit. Morbi id neque quam. Aliquam sollicitudin
+                                                venenatis ipsum ac feugiat. Vestibulum ullamcorper sodales nisi
+                                                nec condimentum. Mauris convallis mauris at
+                                                pellentesque volutpat.</p>
+                                            <blockquote>
+                                                <em>Phasellus at ultricies neque, quis malesuada augue. Donec
+                                                    eleifend condimentum nisl eu consectetur. Integer eleifend,
+                                                    nisl venenatis consequat iaculis, lectus arcu malesuada sem,
+                                                    dapibus porta quam lacus
+                                                    eu neque.</em>
+                                            </blockquote>
+                                            <div class="form-group">
+                                                <label>Datasource</label>
+                                                <select id="select2-data" class="form-control">
+                                                </select>
+                                            </div>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis non
+                                                malesuada est, quis congue nibh. Pellentesque habitant morbi
+                                                tristique senectus et netus et malesuada fames ac turpis
+                                                egestas.</p>
+                                            <p>Consectetur adipiscing elit. Morbi id neque quam. Aliquam
+                                                sollicitudin venenatis ipsum ac feugiat. Vestibulum ullamcorper
+                                                sodales nisi nec condimentum. Mauris convallis mauris at
+                                                pellentesque volutpat. Phasellus
+                                                at ultricies neque, quis malesuada augue. Donec eleifend</p>
+                                            <p>&nbsp;</p>
+                                            <p>Best Regards</p>
+                                        </div>
+                                    </div>
+                                    <div class="p-3 px-md-5 py-md-4 b-t">
+                                        <h6 class="mb-2">Attached files:</h6>
+                                        <div>
+                                            <a href="#" class="d-block mb-1">
+                                                <span class="badge info">PSD</span> DesignMockup.psd
+                                                <small class="ml-2 text-muted">34kb</small>
+                                            </a>
+                                            <a href="#" class="d-block mb-1">
+                                                <span class="badge success">PDF</span> Design-Documentation.pdf
+                                                <small class="ml-2 text-muted">432kb</small>
+                                            </a>
+                                            <a href="#" class="d-block mb-1">
+                                                <span class="badge blue">MP4</span> Design-video-show.mp4
+                                                <small class="ml-2 text-muted">3mb</small>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col p-0">
-                                <div class="tab-content pos-rlt">
-                                    <div class="tab-pane active" id="tab-1">
-                                        <div class="p-4 b-b _600">Public profile</div>
-                                        <form role="form" class="p-4 col-md-6">
-                                            <div class="form-group">
-                                                <label>Profile picture</label>
-                                                <div class="form-file">
-                                                    <input type="file">
-                                                    <button class="btn white">Upload new picture</button>
-                                                </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- Daily Schedule END-->
+                <!-- Setting START-->
+                <div class="content-settings tab-pane" id="content-settings">
+                    <div class="d-sm-flex">
+                        <div class="w w-auto-xs light bg bg-auto-sm b-r">
+                            <div class="py-3">
+                                <div class="nav-active-border left b-primary">
+                                    <ul class="nav flex-column nav-sm">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" href="#" data-toggle="tab"
+                                                data-target="#tab-1">Profile</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link " href="#" data-toggle="tab" data-target="#tab-2">Account
+                                                Settings</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link " href="#" data-toggle="tab"
+                                                data-target="#tab-3">Emails</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link " href="#" data-toggle="tab"
+                                                data-target="#tab-4">Notifications</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link " href="#" data-toggle="tab"
+                                                data-target="#tab-5">Security</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col p-0">
+                            <div class="tab-content pos-rlt">
+                                <div class="tab-pane active" id="tab-1">
+                                    <div class="p-4 b-b _600">Public profile</div>
+                                    <form role="form" class="p-4 col-md-6">
+                                        <div class="form-group">
+                                            <label>Profile picture</label>
+                                            <div class="form-file">
+                                                <input type="file">
+                                                <button class="btn white">Upload new picture</button>
                                             </div>
-                                            <div class="form-group">
-                                                <label>First Name</label>
-                                                <input type="text" class="form-control">
-                                            </div>
-                                            <div class="form-group">
-                                                <label>Last Name</label>
-                                                <input type="text" class="form-control">
-                                            </div>
-                                            <div class="form-group">
-                                                <label>URL</label>
-                                                <input type="text" class="form-control">
-                                            </div>
-                                            <div class="form-group">
-                                                <label>Company</label>
-                                                <input type="text" class="form-control">
-                                            </div>
-                                            <div class="form-group">
-                                                <label>Location</label>
-                                                <input type="text" class="form-control">
-                                            </div>
-                                            <div class="checkbox">
-                                                <label class="ui-check">
-                                                    <input type="checkbox">
-                                                    <i class="dark-white"></i> Available for hire
-                                                </label>
-                                            </div>
-                                            <button type="submit" class="btn primary mt-2">Update</button>
-                                        </form>
-                                    </div>
-                                    <div class="tab-pane" id="tab-2">
-                                        <div class="p-4 b-b _600">Account settings</div>
-                                        <form role="form" class="p-4 col-md-6">
-                                            <div class="form-group">
-                                                <label>Client ID</label>
-                                                <input type="text" disabled="" class="form-control"
-                                                    value="d6386c0651d6380745846efe300b9869">
-                                            </div>
-                                            <div class="form-group">
-                                                <label>Secret Key</label>
-                                                <input type="text" disabled="" class="form-control"
-                                                    value="3f9573e88f65787d86d8a685aeb4bd13">
-                                            </div>
-                                            <div class="form-group">
-                                                <label>App Name</label>
-                                                <input type="text" class="form-control">
-                                            </div>
-                                            <div class="form-group">
-                                                <label>App URL</label>
-                                                <input type="text" class="form-control">
-                                            </div>
-                                            <button type="submit" class="btn primary m-t">Update</button>
-                                        </form>
-                                    </div>
-                                    <div class="tab-pane" id="tab-3">
-                                        <div class="p-4 b-b _600">Emails</div>
-                                        <form role="form" class="p-4 col-md-6">
-                                            <p>E-mail me whenever</p>
-                                            <div class="checkbox">
-                                                <label class="ui-check">
-                                                    <input type="checkbox">
-                                                    <i class="dark-white"></i> Anyone posts a comment
-                                                </label>
-                                            </div>
-                                            <div class="checkbox">
-                                                <label class="ui-check">
-                                                    <input type="checkbox">
-                                                    <i class="dark-white"></i> Anyone follow me
-                                                </label>
-                                            </div>
-                                            <div class="checkbox">
-                                                <label class="ui-check">
-                                                    <input type="checkbox">
-                                                    <i class="dark-white"></i> Anyone send me a message
-                                                </label>
-                                            </div>
-                                            <div class="checkbox">
-                                                <label class="ui-check">
-                                                    <input type="checkbox">
-                                                    <i class="dark-white"></i> Anyone invite me to group
-                                                </label>
-                                            </div>
-                                            <button type="submit" class="btn primary mt-2">Update</button>
-                                        </form>
-                                    </div>
-                                    <div class="tab-pane" id="tab-4">
-                                        <div class="p-4 b-b _600">Notifications</div>
-                                        <form role="form" class="p-4 col-md-6">
-                                            <p>Notice me whenever</p>
-                                            <div class="checkbox">
-                                                <label class="ui-check">
-                                                    <input type="checkbox">
-                                                    <i class="dark-white"></i> Anyone seeing my profile page
-                                                </label>
-                                            </div>
-                                            <div class="checkbox">
-                                                <label class="ui-check">
-                                                    <input type="checkbox">
-                                                    <i class="dark-white"></i> Anyone follow me
-                                                </label>
-                                            </div>
-                                            <div class="checkbox">
-                                                <label class="ui-check">
-                                                    <input type="checkbox">
-                                                    <i class="dark-white"></i> Anyone send me a message
-                                                </label>
-                                            </div>
-                                            <div class="checkbox">
-                                                <label class="ui-check">
-                                                    <input type="checkbox">
-                                                    <i class="dark-white"></i> Anyone invite me to group
-                                                </label>
-                                            </div>
-                                            <button type="submit" class="btn primary mt-2">Update</button>
-                                        </form>
-                                    </div>
-                                    <div class="tab-pane" id="tab-5">
-                                        <div class="p-4 b-b _600">Security</div>
-                                        <div class="p-4">
-                                            <div class="clearfix">
-                                                <form role="form" class="col-md-6 p-0">
-                                                    <div class="form-group">
-                                                        <label>Old Password</label>
-                                                        <input type="password" class="form-control">
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label>New Password</label>
-                                                        <input type="password" class="form-control">
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label>New Password Again</label>
-                                                        <input type="password" class="form-control">
-                                                    </div>
-                                                    <button type="submit" class="btn primary mt-2">Update</button>
-                                                </form>
-                                            </div>
-                                            <p class="mt-4">
-                                                <strong>Delete account?</strong>
-                                            </p>
                                         </div>
+                                        <div class="form-group">
+                                            <label>First Name</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Last Name</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>URL</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Company</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Location</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="checkbox">
+                                            <label class="ui-check">
+                                                <input type="checkbox">
+                                                <i class="dark-white"></i> Available for hire
+                                            </label>
+                                        </div>
+                                        <button type="submit" class="btn primary mt-2">Update</button>
+                                    </form>
+                                </div>
+                                <div class="tab-pane" id="tab-2">
+                                    <div class="p-4 b-b _600">Account settings</div>
+                                    <form role="form" class="p-4 col-md-6">
+                                        <div class="form-group">
+                                            <label>Client ID</label>
+                                            <input type="text" disabled="" class="form-control"
+                                                value="d6386c0651d6380745846efe300b9869">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Secret Key</label>
+                                            <input type="text" disabled="" class="form-control"
+                                                value="3f9573e88f65787d86d8a685aeb4bd13">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>App Name</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>App URL</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <button type="submit" class="btn primary m-t">Update</button>
+                                    </form>
+                                </div>
+                                <div class="tab-pane" id="tab-3">
+                                    <div class="p-4 b-b _600">Emails</div>
+                                    <form role="form" class="p-4 col-md-6">
+                                        <p>E-mail me whenever</p>
+                                        <div class="checkbox">
+                                            <label class="ui-check">
+                                                <input type="checkbox">
+                                                <i class="dark-white"></i> Anyone posts a comment
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label class="ui-check">
+                                                <input type="checkbox">
+                                                <i class="dark-white"></i> Anyone follow me
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label class="ui-check">
+                                                <input type="checkbox">
+                                                <i class="dark-white"></i> Anyone send me a message
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label class="ui-check">
+                                                <input type="checkbox">
+                                                <i class="dark-white"></i> Anyone invite me to group
+                                            </label>
+                                        </div>
+                                        <button type="submit" class="btn primary mt-2">Update</button>
+                                    </form>
+                                </div>
+                                <div class="tab-pane" id="tab-4">
+                                    <div class="p-4 b-b _600">Notifications</div>
+                                    <form role="form" class="p-4 col-md-6">
+                                        <p>Notice me whenever</p>
+                                        <div class="checkbox">
+                                            <label class="ui-check">
+                                                <input type="checkbox">
+                                                <i class="dark-white"></i> Anyone seeing my profile page
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label class="ui-check">
+                                                <input type="checkbox">
+                                                <i class="dark-white"></i> Anyone follow me
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label class="ui-check">
+                                                <input type="checkbox">
+                                                <i class="dark-white"></i> Anyone send me a message
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label class="ui-check">
+                                                <input type="checkbox">
+                                                <i class="dark-white"></i> Anyone invite me to group
+                                            </label>
+                                        </div>
+                                        <button type="submit" class="btn primary mt-2">Update</button>
+                                    </form>
+                                </div>
+                                <div class="tab-pane" id="tab-5">
+                                    <div class="p-4 b-b _600">Security</div>
+                                    <div class="p-4">
+                                        <div class="clearfix">
+                                            <form role="form" class="col-md-6 p-0">
+                                                <div class="form-group">
+                                                    <label>Old Password</label>
+                                                    <input type="password" class="form-control">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>New Password</label>
+                                                    <input type="password" class="form-control">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>New Password Again</label>
+                                                    <input type="password" class="form-control">
+                                                </div>
+                                                <button type="submit" class="btn primary mt-2">Update</button>
+                                            </form>
+                                        </div>
+                                        <p class="mt-4">
+                                            <strong>Delete account?</strong>
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -483,18 +610,20 @@
     </div>
     <!-- build:js ../assets/js/app.min.js -->
     <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <!-- Bootstrap -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/js/select2.min.js"></script>
+
     <!-- core -->
-    <script src="https://afiqrostam.github.io/time-v/script/nav.js"></script>
+    <script src="https://afiqrostam.github.io/time-v//script/nav.js"></script>
     <script src="https://afiqrostam.github.io/time-v/script/build.js"></script>
     <!-- endbuild -->
 </body>
