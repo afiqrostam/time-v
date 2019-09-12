@@ -1,3 +1,6 @@
-/*
-Custom css
-*/
+.body-form, .body-search {
+    min-height: 100vh;
+}
+.body-start { 
+    min-height: 80vh;
+}
