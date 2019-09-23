@@ -16,14 +16,17 @@
     <!-- build:css ../assets/css/app.min.css -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="https://afiqrostam.github.io/time-v/css/app.css" type="text/css" />
-    <link rel="stylesheet" href="https://afiqrostam.github.io/time-v/css/primary.css" type="text/css" />
-    <link rel="stylesheet" href="https://afiqrostam.github.io/time-v/css/style.css" type="text/css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker3.min.css"
+        integrity="sha256-FAOaXTpl90/K8cXmSdsskbQN3nKYulhCpPbcFzGTWKI=" crossorigin="anonymous" />
+    <!-- https://afiqrostam.github.io/time-v/css/ -->
+    <link rel="stylesheet" href="app.css" type="text/css" />
+    <link rel="stylesheet" href="primary.css" type="text/css" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
 
 <body>
-    <div class="app hide" id="app">
+    <div class="app hide " id="app">
         <!-- ############ LAYOUT START-->
         <!-- ############ Aside START-->
         <div id="aside" class="app-aside fade box-shadow-x nav-expand white">
@@ -45,9 +48,7 @@
                     <div class="scroll">
                         <div class="nav-border b-primary" data-nav>
                             <ul class="nav bg">
-                                <li class="nav-header">
-                                    &nbsp;
-                                </li>
+                                <li class="nav-header">&nbsp;</li>
                                 <li class="active">
                                     <a href="#" data-toggle="tab" data-target="#content-work-order" class="show">
                                         <span class="nav-icon"><i class="fa fa-home"></i></span>
@@ -66,7 +67,6 @@
                                         <span class="nav-text">Settings</span>
                                     </a>
                                 </li>
-
                             </ul>
                         </div>
                     </div>
@@ -83,25 +83,20 @@
                     <a class="d-lg-none mx-2" data-toggle="modal" data-target="#aside">
                         <i class="fa fa-lg fa-bars"></i>
                     </a>
-                    <!-- Page title -->
-                    <div class="navbar-text nav-title flex"></div>
                 </div>
             </div>
             <div class="tab-content">
                 <!-- Content -->
                 <!-- Work Order START-->
-                <div class="content-work-order tab-pane active" id="content-work-order" data-id="work">
+                <div class="tab-pane active" id="content-work-order" data-id="work">
                     <div class="d-flex flex">
                         <div class="fade aside aside-sm b-r" id="content-work-order-aside">
                             <div class="modal-dialog d-flex flex-column w-md h-100 light lt">
-                                <div class="navbar">
-                                    <span class="text-md">Job Packs</span>
-                                </div>
+                                <div class="navbar"><span class="text-md">Job Packs</span></div>
                                 <div class="scrollable hover">
                                     <a class="nav-link mt-2 content-nav">
                                         <span class="btn btn-sm btn-block btn-rounded theme">
-                                            <i class="fa fa-plus float-left"></i>
-                                            New
+                                            <i class="fa fa-plus float-left"></i> New
                                         </span>
                                     </a>
                                     <div class="sidenav my-3">
@@ -111,20 +106,12 @@
                                                     <div class="b-t mt-3 pt-3 pb-2 text-muted">Team</div>
                                                 </li>
                                                 <li class="content-nav active">
-                                                    <a href="#" class="link">
-                                                        <span class="nav-text name">All</span>
-                                                    </a>
+                                                    <a href="#" class="link nav-text">All</a>
                                                 </li>
                                             </ul>
                                         </nav>
                                     </div>
                                 </div>
-                                <!-- / -->
-                                <!-- footer -->
-                                <div class="p-2 mt-auto p-3">
-                                    Footer
-                                </div>
-                                <!-- / -->
                             </div>
                         </div>
                         <div class="d-flex flex-column flex white">
@@ -136,25 +123,20 @@
                                             <i class="fa fa-th"></i>
                                         </span>
                                     </a>
-                                    <form class="w-100">
-                                        <div class="input-group">
-                                            <input type="text"
-                                                class="form-control form-control-sm search body-search-input"
-                                                placeholder="Input the keywords to search" required="">
-                                            <span class="input-group-append">
-                                                <button class="btn btn-default btn-sm no-shadow" type="button"><i
-                                                        class="fa fa-search"></i></button>
-                                            </span>
-                                        </div>
-                                    </form>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control form-control-sm search body-search-input"
+                                            placeholder="Input the keywords to search" required="">
+                                        <span class="input-group-append">
+                                            <button class="btn btn-default btn-sm no-shadow" type="button">
+                                                <i class="fa fa-search"></i>
+                                            </button>
+                                        </span>
+                                    </div>
                                 </div>
                                 <div class="scroll-y">
-                                    <div class="list body-result hide">
-                                    </div>
+                                    <div class="list body-result hide"></div>
                                     <div class="no-result hide">
-                                        <div class="p-4 text-center">
-                                            No Results
-                                        </div>
+                                        <div class="p-4 text-center">No Results</div>
                                     </div>
                                     <div class="body-start">
                                         <div class="p-4 text-center">
@@ -165,6 +147,11 @@
                                 </div>
                                 <div class="p-3 b-t mt-auto">
                                     <div class="d-flex align-items-center">
+                                        <div class="flex d-flex flex-row">
+                                            <div class="pagination pagination-xs">
+                                                <li class="active content-page"><a class="page" href="#">1</a></li>
+                                            </div>
+                                        </div>
                                         <div>
                                             <span class="text-muted">Total:</span>
                                             <span class="body-count">0</span>
@@ -174,47 +161,55 @@
                             </div>
                             <div class="hide body-form">
                                 <div class="navbar box-shadow">
-                                    <a href="#" class="d-md-none btn-go-back btn btn-sm btn-icon primary body-form-close">
+                                    <a href="#"
+                                        class="d-md-none btn-go-back btn btn-sm btn-icon primary body-form-close">
                                         <i class="fa fa-long-arrow-left"></i>
                                     </a>
                                 </div>
                                 <div class="scroll-y">
-                                    <div class="p-3 px-md-5 py-md-4">
+                                    <div class="p-3 px-md-3 py-md-5">
                                         <div class="form-group row">
-                                            <label class="col-md-2 col-form-label">Work Description</label>
-                                            <div class="col-md-10">
+                                            <span class="col-md-3 col-form-label font-weight-bold">
+                                                Work Description
+                                            </span>
+                                            <div class="col-md-9">
                                                 <p class="form-control-plaintext data-wo-desc">&nbsp;</p>
+                                                <input type="text" class="form-control input-wo-desc">
                                             </div>
                                         </div>
-
-                                        <div class="form-group row">
-                                            <label class="col-md-2 col-form-label">Task No.</label>
-                                            <div class="col-md-10">
+                                        <div class="d-sm-flex mb-2">
+                                            <div class="flex-grow-1 pr-2">
+                                                <span class="form-text font-weight-bold">VIS Task</span>
                                                 <p class="form-control-plaintext">
                                                     <span class="data-task-no">&nbsp;</span>
                                                     <span class="mx-1 text-muted data-task-desc">&nbsp;</span>
                                                 </p>
+                                                <select class="form-control input-task-no">
+                                                </select>
+                                            </div>
+                                            <div class="flex-fill">
+                                                <span class="form-text font-weight-bold">Start Date</span>
+                                                <p class="form-control-plaintext data-start-date">&nbsp;</p>
                                             </div>
                                         </div>
-                                        <div class="form-row">
-                                            <div class="col-md-4">
-                                                <small class="form-text text-muted">Veolia Service Order</small>
+                                        <div class="d-sm-flex">
+                                            <div class="flex-fill pr-2">
+                                                <span class="form-text font-weight-bold">VIS Service Order</span>
                                                 <p class="form-control-plaintext data-veolia-so">&nbsp;</p>
+                                                <input type="text" class="form-control input-veolia-so">
                                             </div>
-                                            <div class="col-md-4">
-
-                                                <small class="form-text text-muted">BlueScope Purchase
-                                                    Order</small>
+                                            <div class="flex-fill pr-2">
+                                                <span class="form-text font-weight-bold">BSC Purchase Order</span>
                                                 <p class="form-control-plaintext data-bsc-po">&nbsp;</p>
+                                                <input type="text" class="form-control input-bsc-po">
                                             </div>
-                                            <div class="col-md-4">
-
-                                                <small class="form-text text-muted">BlueScope Work Order</small>
+                                            <div class="flex-fill pr-2">
+                                                <span class="form-text font-weight-bold">BSC Work Order</span>
                                                 <p class="form-control-plaintext data-bsc-wo">&nbsp;</p>
+                                                <input type="text" class="form-control input-bsc-wo">
                                             </div>
                                         </div>
                                     </div>
-
                                 </div>
                             </div>
                         </div>
@@ -222,18 +217,15 @@
                 </div>
                 <!-- Work Order END-->
                 <!-- Daily Schedule START-->
-                <div class="content-daily-schedule tab-pane" id="content-daily-schedule">
+                <div class="tab-pane" id="content-daily-schedule" data-id="daily">
                     <div class="d-flex flex">
                         <div class="fade aside aside-sm b-r" id="content-daily-schedule-aside">
                             <div class="modal-dialog d-flex flex-column w-md h-100 light lt">
-                                <div class="navbar">
-                                    <span class="text-md">Daily Schedule</span>
-                                </div>
+                                <div class="navbar"><span class="text-md">Daily Schedule</span></div>
                                 <div class="scrollable hover">
                                     <a class="nav-link mt-2 content-nav">
                                         <span class="btn btn-sm btn-block btn-rounded theme">
-                                            <i class="fa fa-plus float-left"></i>
-                                            New
+                                            <i class="fa fa-plus float-left"></i> New
                                         </span>
                                     </a>
                                     <div class="sidenav my-3">
@@ -243,35 +235,12 @@
                                                     <div class="b-t mt-3 pt-3 pb-2 text-muted">Company</div>
                                                 </li>
                                                 <li class="content-nav active">
-                                                    <a href="#" class="link">
-                                                        <span class="nav-text name">All</span>
-                                                    </a>
-                                                </li>
-                                                <li class="content-nav">
-                                                    <a href="#" class="link">
-                                                        <span class="nav-text name">Veolia</span>
-                                                    </a>
-                                                </li>
-                                                <li class="content-nav">
-                                                    <a href="#" class="link">
-                                                        <span class="nav-text name">Allmen</span>
-                                                    </a>
-                                                </li>
-                                                <li class="content-nav">
-                                                    <a href="#" class="link">
-                                                        <span class="nav-text name">Others</span>
-                                                    </a>
+                                                    <a href="#" class="link nav-text">All</a>
                                                 </li>
                                             </ul>
                                         </nav>
                                     </div>
                                 </div>
-                                <!-- / -->
-                                <!-- footer -->
-                                <div class="p-2 mt-auto p-3">
-                                    Footer
-                                </div>
-                                <!-- / -->
                             </div>
                         </div>
                         <div class="d-flex flex-column flex white">
@@ -294,120 +263,71 @@
                                             </span>
                                         </div>
                                     </form>
-                                    <button class="btn btn-sm white ml-1 sort desc body-search-sort"
-                                        data-sort="item-title" data-toggle="tooltip" title=""
-                                        data-original-title="Sort">
-                                        <i class="fa fa-sort"></i>
-                                    </button>
                                 </div>
                                 <div class="scroll-y">
-                                    <div class="p-3">
-                                        Scrollable content, Resize the Window to see how it works on small
-                                        screen
-                                        <div style="min-height: 75vh;"></div>
-                                        Got the bottom
+                                    <div class="list body-result hide"></div>
+                                    <div class="no-result hide">
+                                        <div class="p-4 text-center">No Results</div>
+                                    </div>
+                                    <div class="body-start">
+                                        <div class="p-4 text-center">
+                                            Input the search field on top or click on the selections on the side to
+                                            begin.
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="p-3 b-t mt-auto">
-                                    Content footer
+                                    <div class="d-flex align-items-center">
+                                        <div class="flex d-flex flex-row">
+                                            <div class="pagination pagination-xs">
+                                                <li class="active content-page"><a class="page" href="#">1</a></li>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <span class="text-muted">Total:</span>
+                                            <span class="body-count">0</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="hide body-form">
                                 <div class="navbar box-shadow">
-                                    <ul class="nav nav-sm no-border">
-
-                                        <li class="nav-item b-l p-l">
-                                            <a class="nav-link text-muted no-border" data-toggle="tooltip"
-                                                data-placement="bottom" title="" data-original-title="Archive">
-                                                <span class="nav-text"><i class="fa fa-fw fa-hdd-o"></i></span>
-                                            </a>
-                                        </li>
-                                        <li class="nav-item hidden-sm-down">
-                                            <a class="nav-link text-muted" data-toggle="tooltip" data-placement="bottom"
-                                                title="" data-original-title="Report">
-                                                <span class="nav-text"><i class="fa fa-fw fa-question"></i></span>
-                                            </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link text-muted" data-toggle="tooltip" data-placement="bottom"
-                                                title="" data-original-title="Delete">
-                                                <span class="nav-text"><i class="fa fa-fw fa-trash-o"></i></span>
-                                            </a>
-                                        </li>
-
-                                    </ul>
                                     <a href="#"
                                         class="d-md-none btn-go-back btn btn-sm btn-icon primary body-form-close">
                                         <i class="fa fa-long-arrow-left"></i>
                                     </a>
                                 </div>
                                 <div class="scroll-y">
-                                    <div class="p-3 px-md-5 py-md-4">
-                                        <h2 class="mb-3 _600">Daily Schedule Form</h2>
-                                        <div class="py-3 b-t">
-                                            <img class="circle w-32 mr-2"
-                                                src="https://getbootstrap.com/docs/4.0/assets/img/favicons/favicon-32x32.png"
-                                                alt=".">
-                                            from
-                                            <a href="#">james@gmail.com</a>
-                                            <span class="text-xs text-muted">on 12:20 7/23</span>
+                                    <div class="p-3 px-md-3 py-md-5">
+                                        <div class="form-group row">
+                                            <span class="col-md-3 col-form-label font-weight-bold">
+                                                Work Date
+                                            </span>
+                                            <div class="col-md-9">
+                                                <p class="form-control-plaintext hide data-date">&nbsp;</p>
+                                                <input type="text" class="form-control input-date">
+                                            </div>
                                         </div>
-                                        <div>
-                                            <p>Hey David,</p>
-                                            <p class="text-lt">Lorem ipsum dolor sit amet, consectetur
-                                                adipiscing elit. Morbi id neque quam. Aliquam sollicitudin
-                                                venenatis ipsum ac feugiat. Vestibulum ullamcorper sodales nisi
-                                                nec condimentum. Mauris convallis mauris at
-                                                pellentesque volutpat.</p>
-                                            <blockquote>
-                                                <em>Phasellus at ultricies neque, quis malesuada augue. Donec
-                                                    eleifend condimentum nisl eu consectetur. Integer eleifend,
-                                                    nisl venenatis consequat iaculis, lectus arcu malesuada sem,
-                                                    dapibus porta quam lacus
-                                                    eu neque.</em>
-                                            </blockquote>
-                                            <div class="form-group">
-                                                <label>Datasource</label>
-                                                <select id="select2-data" class="form-control">
+                                        <div class="d-sm-flex">
+                                            <div class="flex-fill pr-2">
+                                                <span class="form-text font-weight-bold">VIS Task</span>
+                                                <p class="form-control-plaintext">
+                                                    <span class="data-task-no">&nbsp;</span>
+                                                    <span class="mx-1 text-muted data-task-desc">&nbsp;</span>
+                                                </p>
+                                                <select class="form-control input-task-no">
                                                 </select>
                                             </div>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis non
-                                                malesuada est, quis congue nibh. Pellentesque habitant morbi
-                                                tristique senectus et netus et malesuada fames ac turpis
-                                                egestas.</p>
-                                            <p>Consectetur adipiscing elit. Morbi id neque quam. Aliquam
-                                                sollicitudin venenatis ipsum ac feugiat. Vestibulum ullamcorper
-                                                sodales nisi nec condimentum. Mauris convallis mauris at
-                                                pellentesque volutpat. Phasellus
-                                                at ultricies neque, quis malesuada augue. Donec eleifend</p>
-                                            <p>&nbsp;</p>
-                                            <p>Best Regards</p>
-                                        </div>
-                                    </div>
-                                    <div class="p-3 px-md-5 py-md-4 b-t">
-                                        <h6 class="mb-2">Attached files:</h6>
-                                        <div>
-                                            <a href="#" class="d-block mb-1">
-                                                <span class="badge info">PSD</span> DesignMockup.psd
-                                                <small class="ml-2 text-muted">34kb</small>
-                                            </a>
-                                            <a href="#" class="d-block mb-1">
-                                                <span class="badge success">PDF</span> Design-Documentation.pdf
-                                                <small class="ml-2 text-muted">432kb</small>
-                                            </a>
-                                            <a href="#" class="d-block mb-1">
-                                                <span class="badge blue">MP4</span> Design-video-show.mp4
-                                                <small class="ml-2 text-muted">3mb</small>
-                                            </a>
+                                            <div class="flex-fill pr-2">
+                                                <span class="form-text font-weight-bold">Start Date</span>
+                                                <p class="form-control-plaintext data-start-date">&nbsp;</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-
                         </div>
-
                     </div>
-
                 </div>
                 <!-- Daily Schedule END-->
                 <!-- Setting START-->
@@ -599,9 +519,6 @@
                 </div>
                 <!-- Setting END-->
             </div>
-
-
-
         </div>
         <!-- ############ Content END-->
         <!-- ############ LAYOUT END-->
@@ -619,10 +536,11 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/js/select2.min.js"></script>
-
-    <!-- core -->
-    <script src="https://afiqrostam.github.io/time-v//script/nav.js"></script>
-    <script src="https://afiqrostam.github.io/time-v/script/build.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"
+        integrity="sha256-bqVeqGdJ7h/lYPq6xrPv/YGzMEb6dNxlfiTUHSgRCp8=" crossorigin="anonymous"></script>
+    <!-- https://afiqrostam.github.io/time-v//script/ -->
+    <script src="nav.js"></script>
+    <script src="build.js"></script>
     <!-- endbuild -->
 </body>
 
