@@ -36,8 +36,8 @@ function get_db(e) {
 			$('<div class="d-flex justify-content-between">').html(
 				$('<p>').html(
 					$('<span class="mr-1 item-wo-desc">').html(' ')).append(
-						$('<span class="mr-1 item-task-no badge primary">').html(' ')).append(
-							$('<span class="mr-1 item-assign badge primary">').html(' '))).append(
+						$('<span class="mr-1 item-task-no badge indigo">').html(' ')).append(
+							$('<span class="mr-1 item-assign badge indigo">').html(' '))).append(
 								$('<span class="item-date ">').html(' '))).append(
 									$('<div class="d-flex justify-content-between">').html(
 										$('<span class="badge ">').html(' HRS').prepend(
@@ -61,8 +61,8 @@ function get_db(e) {
 		page_nav.addClass('hide');
 
 		// build pagination
-		var pages = Math.floor(data.length / 15);
-		if (Math.floor(data.length % 15) != 0) { pages = pages + 1 }
+		var pages = Math.floor(data.length / 20);
+		if (Math.floor(data.length % 20) != 0) { pages = pages + 1 }
 		for (i = 1; i <= pages; i++) {
 			var paginate_clone = page_temp.clone(true);
 			paginate_clone.removeClass('active');
@@ -84,7 +84,7 @@ function get_db(e) {
 			parent.find('div.no-result').addClass('hide');
 			parent.find('div.body-result').removeClass('hide');
 			// trunc response to 15 intervals
-			data = data.filter(function (f, i, a) { return i >= (page - 1) * 15 && i < page * 15 });
+			data = data.filter(function (f, i, a) { return i >= (page - 1) * 20 && i < page * 20 });
 
 			// populate response with filtered data
 			data.forEach(function (f) {
@@ -109,8 +109,8 @@ function get_db(e) {
 		else { var page = 1 }
 		// search params
 		var search = parent.find('input.body-search-input').val();
-		
-		
+
+
 		console.log(data)
 		// filtering results
 		if (company != undefined) { data = data.filter(function (f) { return f.assign == team }) }
@@ -203,23 +203,15 @@ function open_main_form(e) {
 				$(this).addClass('hide').val('')
 			});
 
-		if ($(e).data('id') != undefined) {
-			var data = $.grep(db.work, function (f) { return f.vams_wo === $(e).data('id') })[0];
-			form.find('[class*=data]').each(function () { $(this).removeClass('hide') });
-			Object.getOwnPropertyNames(data).forEach(function (f) {
-				if (data[f] != '') {
-					var search = f.replace('_', '-');
-					if (search.indexOf('date') == -1) { form.find('[class*=data-' + search + ']').each(function () { $(this).html(data[f]) }) }
-					else { form.find('.data-start-date').html(data.start_date.toJSON().substr(0, 10)) }
-				}
-			})
-		}
-		else {
-			form.find('[class*=input]').each(function () {
-				if ($(this).is('select')) { $(this).select2({ data: db.task.filter(function (e) { return e.status == 'Validated' }).map(function (e) { return { id: e.el_code, text: e.el_desc } }) }) }
-				$(this).removeClass('hide')
-			});
-		}
+		var data = $.grep(db.work, function (f) { return f.vams_wo === $(e).data('id') })[0];
+		form.find('[class*=data]').each(function () { $(this).removeClass('hide') });
+		Object.getOwnPropertyNames(data).forEach(function (f) {
+			if (data[f] != '') {
+				var search = f.replace('_', '-');
+				if (search.indexOf('date') == -1) { form.find('[class*=data-' + search + ']').each(function () { $(this).html(data[f]) }) }
+				else { form.find('.data-start-date').html(data.start_date.toJSON().substr(0, 10)) }
+			}
+		});
 	}
 	parent.find('div.body-form').removeClass('hide').addClass('show')
 	parent.find('div.body-search').removeClass('show').addClass('hide')
